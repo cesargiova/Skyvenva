@@ -1,0 +1,25 @@
+:root {
+    --blanco: #ffffff;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --oscuro: #212121;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  th {
+    background-color: var(--blanco);
+    color: var(--oscuro);
+  }

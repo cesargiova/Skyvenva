@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Skyven VA</title>
+        <link rel="stylesheet" href="src/css/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="src/css/styles.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="src/css/footer.css">
+    </head>
+    <body>
+
+        <header class="header">
+
+            <div">
+                <div class="barra">
+                    <a class="logo-barra" href="index.html">
+                        <h1 class="logo-barra__nombre no-margin centrar-texto">Skyven<span class="logo-barra__bold">Cielos de Venezuela</span></h1>
+                    </a>
+    
+                    <nav class="navegacion">
+                        <a href="index.html "   class="navegacion__enlace">Inicio</a>
+                        <a href="pilotos.html " class="navegacion__enlace">Pilotos</a>
+                        <a href="centropilotos.html " class="navegacion__enlace">Centro de Pilotos</a>
+                        <a href="flota.html "   class="navegacion__enlace">Flota</a>
+                        <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="hero">
+<!--            <div class="contenido-hero">
+                <p><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z"/>
+                    <circle cx="12" cy="11" r="3" />
+                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
+                </svg>Caracas, Venezuela</p>
+                
+                <a class="boton" href="contacto.html">Contactar</a>
+            </div> -->
+        </div>
+
+        <div class="contenedor sombra">
+            <div class="logo">
+                <img src="src/img/logo repintado4.jpg" style="width:auto;">
+            </div>
+            <main>
+                <div class="contacto">
+                    <h2>Contacto</h2>
+                    <div class="iconos">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-plus" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#0097A7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                            <path d="M15 6h6m-3 -3v6" />
+                        </svg>
+                    </div>
+                    <form class="formulario" action="#" method="POST">
+                        <legend>Contactános llenando todos los campos</legend>
+    
+                        <div class="contenedor-campos">
+                            <div class="campo">
+                                <label>Nombre</label>
+    
+                                <input type="text" name="nombre" placeholder="Nombre" required>
+                            </div>
+                            <div class="campo">
+                                <label>Teléfono</label>
+    
+                                <input type="tel" name="telefono" placeholder="Teléfono">
+                            </div>
+                            <div class="campo w-100">
+                                <label>Correo</label>
+    
+                                <input type="mail" name="correo" placeholder="Mail">
+                            </div>
+                            <div class="campo w-100">
+                                <label>Mensaje:</label>
+                                <textarea></textarea>
+                            </div>
+                        </div><!--.contenedor-campos-->
+                        <div class="enviar">
+                            <input class="boton" type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </main>
+        </div>
+
+        <div class="footer-basic">
+            <footer>
+                <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="index.html">Inicio</a></li>
+                    <li class="list-inline-item"><a href="pilotos.html">Pilotos</a></li>
+                    <li class="list-inline-item"><a href="centropilotos.html">Centro de Pilotos</a></li>
+                    <li class="list-inline-item"><a href="flota.html">Flota</a></li>
+                    <li class="list-inline-item"><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <p class="copyright">Copyright © 2021 Venezportal Group - designed by Cesar De Martinez</p>
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+        <script>    
+            $(window).scroll(function(){
+            if ($(".barra").offset().top > 400){
+                 $(".barra").addClass("bgcolor");
+                 $(".navegacion__enlace").addClass("fontcolor");
+                 
+            } else {
+                $(".barra").removeClass("bgcolor");
+                $(".navegacion__enlace").removeClass("fontcolor");
+            };
+        });
+        </script>
+    </body>
+</html>
